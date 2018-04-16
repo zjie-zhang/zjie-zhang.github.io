@@ -6,13 +6,13 @@
   <title>hexo 搭建个人网站 | Mellete</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="hexoHexo" />
+  <meta name="keywords" content="Hexo" />
   
   
   
   
   <meta name="description" content="Hexo 搭建个人网站（基础教程）前言目前比较流行的有Jekyll，Hexo，Simple，Octopress，Pelican以及Lo·gecho等等。这些静态程序可以说都有各自的好处，但最后我选择了Hexo来搭建自己的博客 选择 Hexo 的原因主要有：  Hexo 基于 NodeJs 实现，在 Windows 上安装 NodeJs 开发环境简单 Hexo 可以通过简单的命令实现本地的预览，并直">
-<meta name="keywords" content="hexo,Hexo">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 搭建个人网站">
 <meta property="og:url" content="http://git.mellete.com/2018/04/13/Hexo-create/index.html">
@@ -20,7 +20,7 @@
 <meta property="og:description" content="Hexo 搭建个人网站（基础教程）前言目前比较流行的有Jekyll，Hexo，Simple，Octopress，Pelican以及Lo·gecho等等。这些静态程序可以说都有各自的好处，但最后我选择了Hexo来搭建自己的博客 选择 Hexo 的原因主要有：  Hexo 基于 NodeJs 实现，在 Windows 上安装 NodeJs 开发环境简单 Hexo 可以通过简单的命令实现本地的预览，并直">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://chuantu.biz/t6/283/1523608418x-1404817497.png">
-<meta property="og:updated_time" content="2018-04-13T10:29:23.242Z">
+<meta property="og:updated_time" content="2018-04-16T09:21:13.912Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 搭建个人网站">
 <meta name="twitter:description" content="Hexo 搭建个人网站（基础教程）前言目前比较流行的有Jekyll，Hexo，Simple，Octopress，Pelican以及Lo·gecho等等。这些静态程序可以说都有各自的好处，但最后我选择了Hexo来搭建自己的博客 选择 Hexo 的原因主要有：  Hexo 基于 NodeJs 实现，在 Windows 上安装 NodeJs 开发环境简单 Hexo 可以通过简单的命令实现本地的预览，并直">
@@ -265,7 +265,20 @@ hexo deploy
 <li><p>在浏览器中输入<a href="http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！" target="_blank" rel="noopener">http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！</a></p>
 </li>
 </ul>
-<h3 id="绑定个人域名"><a href="#绑定个人域名" class="headerlink" title="绑定个人域名"></a>绑定个人域名</h3>
+<h3 id="绑定个人域名"><a href="#绑定个人域名" class="headerlink" title="绑定个人域名"></a>绑定个人域名</h3><ul>
+<li>购买域名，这里就不多说了</li>
+<li>在项目的 source 文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是 mellete.com ，只能添加一个哦。</li>
+<li>获取IP <code>ping yourname.github.io</code></li>
+<li>在 CDN列表添加一条记录指向你的仓库地址</li>
+<li>重新部署一次，用你的域名直接访问</li>
+<li>是不是很惊喜！！！</li>
+</ul>
+<hr>
+<font color="orange">注：以上步骤后就可以写文章了，Markdown语法进行编写，在 <code>\source\_posts</code> 目录下新建 <code>.md</code> 格式的文件就可以了</font>
+
+<p>这次就先写到这里了，后续还有<font color="#009999">主题的修改及配置，添加RSS，添加评论及其插件的使用，还有最重要的写文章部分的一些内容</font></p>
+<hr>
+<h4 id="啊哦，我也是普通的程序猿一枚，有何疑问欢迎讨论，欢迎加群-417307423"><a href="#啊哦，我也是普通的程序猿一枚，有何疑问欢迎讨论，欢迎加群-417307423" class="headerlink" title="^_^ 啊哦，我也是普通的程序猿一枚，有何疑问欢迎讨论，欢迎加群 417307423~~"></a><font color="#009900">^_^ 啊哦，我也是普通的程序猿一枚，有何疑问欢迎讨论，欢迎加群 417307423~~</font></h4>
       
     </div>
     <footer class="article-footer">
@@ -310,7 +323,7 @@ var a = new Donate({
 
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
 
     </footer>
   </div>
@@ -318,11 +331,15 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-  
-    <a href="/2018/04/12/Myfirst/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Myfirst</div>
+    <a href="/2018/04/13/GraphQL入门/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          GraphQL入门
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -335,7 +352,7 @@ var a = new Donate({
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-搭建个人网站（基础教程）"><span class="nav-number">1.</span> <span class="nav-text">Hexo 搭建个人网站（基础教程）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赶紧玩起来啦-Go-Go-Go"><span class="nav-number">1.2.</span> <span class="nav-text">赶紧玩起来啦 Go Go Go</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git-Bash"><span class="nav-number">1.2.1.</span> <span class="nav-text">安装 Git Bash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上传到-GitHub"><span class="nav-number">1.2.3.</span> <span class="nav-text">上传到 GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定个人域名"><span class="nav-number">1.2.4.</span> <span class="nav-text">绑定个人域名</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-搭建个人网站（基础教程）"><span class="nav-number">1.</span> <span class="nav-text">Hexo 搭建个人网站（基础教程）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赶紧玩起来啦-Go-Go-Go"><span class="nav-number">1.2.</span> <span class="nav-text">赶紧玩起来啦 Go Go Go</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git-Bash"><span class="nav-number">1.2.1.</span> <span class="nav-text">安装 Git Bash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上传到-GitHub"><span class="nav-number">1.2.3.</span> <span class="nav-text">上传到 GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定个人域名"><span class="nav-number">1.2.4.</span> <span class="nav-text">绑定个人域名</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#啊哦，我也是普通的程序猿一枚，有何疑问欢迎讨论，欢迎加群-417307423"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">^_^ 啊哦，我也是普通的程序猿一枚，有何疑问欢迎讨论，欢迎加群 417307423~~</span></a></li></ol></li></ol></li></ol></li></ol>
     
     </div>
   </aside>
